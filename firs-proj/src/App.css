@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #202938;
+}
+
+.app {
+  max-width: 1200px;
+  margin: auto;
+  padding: 25px;
+}
+
+/* Header */
+.header {
+  background: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.header p,
+.stat-card p,
+.stat-card small {
+  color: #777;
+  margin-top: 6px;
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  gap: 15px;
+  margin: 25px 0;
+}
+
+button {
+  border: none;
+  padding: 12px 18px;
+  border-radius: 7px;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+/* Welcome */
+.welcome {
+  background: #2455dc;
+  color: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.welcome p {
+  margin-top: 8px;
+}
+
+/* Dashboard Cards */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.stat-card {
+  background: white;
+  padding: 22px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+.stat-card h2 {
+  margin-top: 12px;
+}
+
+/* Quick Actions */
+.quick-actions {
+  background: white;
+  padding: 22px;
+  border-radius: 10px;
+  margin-top: 22px;
+}
+
+.quick-actions button {
+  margin: 15px 10px 0 0;
+}
+
+/* Form */
+.form,
+.student-list {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.form label {
+  display: block;
+  margin-top: 18px;
+}
+
+.form input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+}
+
+.form button {
+  margin-top: 20px;
+}
+
+/* Students */
+.student {
+  background: #f8fafc;
+  padding: 18px;
+  margin-top: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.student p,
+.student small {
+  color: #777;
+  margin-top: 5px;
+}
+
+.delete-btn {
+  background: #dc2626;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 450px) {
+  .stats {
+    grid-template-columns: 1fr;
+  }
+}
